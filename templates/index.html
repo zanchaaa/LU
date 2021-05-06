@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deposit_new</title>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        Deposit (euro): <input type="text" name="deposit"><br>
+        Term (years): <input type="number" name="term"><br>
+        Rate (decimal): <input type="float" name="rate"><br>
+        {{ form.as_p }}
+        <input type="submit">
+    </form>
+</body>

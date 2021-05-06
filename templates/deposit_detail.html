@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deposit_detail</title>
+</head>
+<body>
+    <h1> Deposit (euro): <strong>{{ index.deposit }}</strong></h1>
+    <h1> Term (years): {{ index.term }}</h1>
+    <h1> Rate (decimal): {{ index.rate }}</h1>
+    <h1> Total interest:
+
+        for i in range(term):
+            print(((deposit*(1+rate)+i)-deposit))
+    </h1>
+</body>
+</html>
